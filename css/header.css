@@ -35,6 +35,19 @@ border-bottom: 1px solid #E7E9FC;
     padding: 24px 0;
 }
 
+.menu-nav-links::after {
+    content: "";
+    display: flex;
+    width: 0;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+}
+
+.menu-nav-links:hover::after {
+    width: 100%;
+}
+
 .menu-nav a:hover,
 .menu-nav a:focus {
     color: #404BBF;

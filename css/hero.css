@@ -2,6 +2,16 @@
     background-color: #2E2F42;
     display: flex;
     flex-direction: column;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 70%),
+        rgba(46, 47, 66, 70%)
+    ), 
+    url(../images/people-office\ 1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-text {
@@ -31,6 +41,9 @@
     padding-left: 32px;
     gap: 10px;
     border: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -41,9 +54,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.hero {
-    padding-top: 188px;
-    padding-bottom: 188px;
 }
