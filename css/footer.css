@@ -11,11 +11,16 @@
     gap: 72px;
 }
 
+.logo {
+    margin-bottom: 16px;
+}
+
 .footer-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 288px;
+    text-align: start;
 }
 
 .footer-text {
@@ -24,7 +29,6 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin-bottom: 16px;
 }
 
 .footer-heading {
@@ -73,7 +77,8 @@
 
 .footer-input {
     color: #ffffff;
-    width: 264px;
+    width: 288px;
+    max-width: 100%;
     height: 40px;
     border: 1px solid #ffffff;
     border-radius: 4px;
@@ -177,10 +182,6 @@
         align-items: flex-start;
         gap: 0;
         padding: 0 15px;
-    }
-
-    .container {
-        padding: 0;
     }
 
     .footer-box {
