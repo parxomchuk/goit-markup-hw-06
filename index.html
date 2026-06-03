@@ -24,7 +24,7 @@
           ><span class="logo-studio">Studio</span>
         </a>
         <nav class="menu-nav">
-          <ul class="menu-nav-link">
+          <ul class="menu-nav-list">
             <li>
               <a href="#features" class="menu-nav-links activator">Features</a>
             </li>
@@ -50,6 +50,11 @@
             </li>
           </ul>
         </address>
+        <button class="header-burger" type="button">
+          <svg class="header-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -60,7 +65,7 @@
         </div>
       </section>
       <section id="features" class="features section">
-        <div class="features-container container">
+        <div class="container">
           <h2 class="sr-only">Our features</h2>
           <ul class="features-list">
             <li class="features-item">
@@ -115,10 +120,10 @@
         </div>
       </section>
       <section id="team" class="team section">
-        <div class="team-container container">
+        <div class="container">
           <h2 class="heading">Our Team</h2>
-          <ul class="section-team">
-            <li class="team-png">
+          <ul class="team-list">
+            <li class="team-item">
               <img
                 class="img-team"
                 src="./images/team-1.jpg"
@@ -126,7 +131,7 @@
                 width="264"
                 height="260"
               />
-              <div class="team-content">
+              <div class="team-wrapper-box">
                 <h3 class="team-heading">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
                 <ul class="team-social-list">
@@ -161,7 +166,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-png">
+            <li class="team-item">
               <img
                 class="img-team"
                 src="./images/team-2.jpg"
@@ -169,7 +174,7 @@
                 width="264"
                 height="260"
               />
-              <div class="team-content">
+              <div class="team-wrapper-box">
                 <h3 class="team-heading">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
                 <ul class="team-social-list">
@@ -204,7 +209,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-png">
+            <li class="team-item">
               <img
                 class="img-team"
                 src="./images/team-3.jpg"
@@ -212,7 +217,7 @@
                 width="264"
                 height="260"
               />
-              <div class="team-content">
+              <div class="team-wrapper-box">
                 <h3 class="team-heading">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
                 <ul class="team-social-list">
@@ -247,7 +252,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-png">
+            <li class="team-item">
               <img
                 class="img-team"
                 src="./images/team-4.jpg"
@@ -255,7 +260,7 @@
                 width="264"
                 height="260"
               />
-              <div class="team-content">
+              <div class="team-wrapper-box">
                 <h3 class="team-heading">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
                 <ul class="team-social-list">
@@ -293,12 +298,12 @@
           </ul>
         </div>
       </section>
-      <section id="portfolio" class="portfolio section">
-        <div class="portfolio-container container">
-          <h2 class="heading">Our Portfolio</h2>
-          <ul class="section-portfolio">
-            <li class="portfolio-png">
-              <div class="hover-png">
+      <section id="portfolio" class="section">
+        <div class="container">
+          <h2 class="portfolio-heading">Our Portfolio</h2>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <div class="hidden-png">
                 <img
                   class="img-portfolio"
                   src="./images/Portfolio-1.jpg"
@@ -306,16 +311,16 @@
                   width="360"
                   height="300"
                 />
-                <p class="hover-text"></p>
+                <p class="hidden-text"></p>
               </div>
               <div class="portfolio-content">
-                <h3 class="portfolio-head">Banking App</h3>
+                <h3 class="portfolio-name">Banking App</h3>
                 <p class="portfolio-text">App</p>
               </div>
             </li>
-            <li class="portfolio-png">
+            <li class="portfolio-item">
               <div class="portfolio-img">
-                <div class="hover-png">
+                <div class="hidden-png">
                   <img
                     class="img-portfolio"
                     src="./images/Portfolio-2.jpg"
@@ -323,7 +328,7 @@
                     width="360"
                     height="300"
                   />
-                  <p class="hover-text">
+                  <p class="hidden-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
@@ -331,12 +336,12 @@
                 </div>
               </div>
               <div class="portfolio-content">
-                <h3 class="portfolio-head">Cashless Payment</h3>
+                <h3 class="portfolio-name">Cashless Payment</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
             </li>
-            <li class="portfolio-png">
-              <div class="hover-png">
+            <li class="portfolio-item">
+              <div class="hidden-png">
                 <img
                   class="img-portfolio"
                   src="./images/Portfolio-3.jpg"
@@ -344,15 +349,15 @@
                   width="360"
                   height="300"
                 />
-                <p class="hover-text"></p>
+                <p class="hidden-text"></p>
               </div>
               <div class="portfolio-content">
-                <h3 class="portfolio-head">Meditation App</h3>
+                <h3 class="portfolio-name">Meditation App</h3>
                 <p class="portfolio-text">App</p>
               </div>
             </li>
-            <li class="portfolio-png">
-              <div class="hover-png">
+            <li class="portfolio-item">
+              <div class="hidden-png">
                 <img
                   class="img-portfolio"
                   src="./images/Portfolio-4.jpg"
@@ -360,15 +365,15 @@
                   width="360"
                   height="300"
                 />
-                <p class="hover-text"></p>
+                <p class="hidden-text"></p>
               </div>
               <div class="portfolio-content">
-                <h3 class="portfolio-head">Taxi Service</h3>
+                <h3 class="portfolio-name">Taxi Service</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
             </li>
-            <li class="portfolio-png">
-              <div class="hover-png">
+            <li class="portfolio-item">
+              <div class="hidden-png">
                 <img
                   class="img-portfolio"
                   src="./images/Portfolio-5.jpg"
@@ -376,15 +381,15 @@
                   width="360"
                   height="300"
                 />
-                <p class="hover-text"></p>
+                <p class="hidden-text"></p>
               </div>
               <div class="portfolio-content">
-                <h3 class="portfolio-head">Screen Illustrations</h3>
+                <h3 class="portfolio-name">Screen Illustrations</h3>
                 <p class="portfolio-text">Design</p>
               </div>
             </li>
-            <li class="portfolio-png">
-              <div class="hover-png">
+            <li class="portfolio-item">
+              <div class="hidden-png">
                 <img
                   class="img-portfolio"
                   src="./images/Portfolio-6.jpg"
@@ -392,10 +397,10 @@
                   width="360"
                   height="300"
                 />
-                <p class="hover-text"></p>
+                <p class="hidden-text"></p>
               </div>
               <div class="portfolio-content">
-                <h3 class="portfolio-head">Online Courses</h3>
+                <h3 class="portfolio-name">Online Courses</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
             </li>
@@ -415,7 +420,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="footer-social-box">
           <p class="footer-heading">Social media</p>
           <ul class="footer-social-list">
             <li>
@@ -455,12 +460,13 @@
               class="footer-input"
               type="email"
               name="email"
+              aria-label="email"
               placeholder="E-mail"
               required
             />
             <button class="footer-button" type="submit">
               Subscribe
-              <svg class="icon-subscribe" width="24" height="24">
+              <svg class="footer-icon-subscribe" width="24" height="24">
                 <use href="./images/icons.svg#footer-send"></use>
               </svg>
             </button>
@@ -468,6 +474,96 @@
         </div>
       </div>
     </footer>
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-nav-list">
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-link activator" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-link" href="#footer">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-bottom">
+          <address class="mobile-menu-address">
+            <ul class="mobile-menu-contacts">
+              <li>
+                <a class="mobile-menu-phone" href="tel:+110001111111">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu-email" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-menu-socials-list">
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link" href="#">
+                <svg
+                  class="mobile-menu-socials-icon"
+                  width="24"
+                  height="24"
+                  fill="#F4F4FD"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link" href="#">
+                <svg
+                  class="mobile-menu-socials-icon"
+                  width="24"
+                  height="24"
+                  fill="#F4F4FD"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link" href="#">
+                <svg
+                  class="mobile-menu-socials-icon"
+                  width="24"
+                  height="24"
+                  fill="#F4F4FD"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link" href="#">
+                <svg
+                  class="mobile-menu-socials-icon"
+                  width="24"
+                  height="24"
+                  fill="#F4F4FD"
+                >
+                  <use href="./images/icons.svg#icon-linkdn"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="backdrop" id="modal">
       <div class="modal">
         <button class="modal-close" type="button">
@@ -486,7 +582,7 @@
               required
               id="name"
             />
-            <svg width="18" height="24" class="svg-icon">
+            <svg width="18" height="24" class="modal-svg-icon">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
@@ -499,7 +595,7 @@
               required
               id="phone"
             />
-            <svg width="18" height="24" class="svg-icon">
+            <svg width="18" height="24" class="modal-svg-icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
@@ -512,7 +608,7 @@
               required
               id="email"
             />
-            <svg width="18" height="24" class="svg-icon">
+            <svg width="18" height="24" class="modal-svg-icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>

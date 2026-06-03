@@ -1,20 +1,17 @@
 body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    font-weight: normal;
+    color: #2e2f42;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
+
 ul {
-    list-style-type: none;
+    list-style: none;
 } 
 
-h1, h2, h3, h4, h5, h6, p, ul, p {
+h1, h2, h3, h4, h5, h6, p, ul, ol, p {
     padding: 0;
     margin: 0;
 }
@@ -37,22 +34,45 @@ a {
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .container {
-    max-width: 1158px;
+    max-width: 320px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 
 .img {
     display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
 }
 
 textarea {
     resize: none;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }

@@ -9,8 +9,8 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -24,15 +24,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
+    width: calc(100% - 32px);
     min-height: 584px;
     background-color: #fcfcfc;
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    overflow: auto;
 }
 
 .modal-close {
@@ -79,6 +78,15 @@
     margin-bottom: 4px;
 }
 
+.input-wrapper {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.input-svg {
+    position: relative;
+}
+
 .modal-input {
     width: 100%;
     height: 40px;
@@ -98,7 +106,7 @@
     outline: none;
 }
 
-.modal-input:focus + .svg-icon {
+.modal-input:focus + .modal-svg-icon {
     fill: #4D5AE5;
 }
 
@@ -107,7 +115,7 @@
     margin-bottom: 8px;
 }
 
-.svg-icon {
+.modal-svg-icon {
     fill: #2E2F42;
     position: absolute;
     top: 50%;
@@ -136,10 +144,8 @@
     color: rgba(46, 47, 66, 0.4);
 }
 
-.icon-checkbox {
-    fill: #ffffff;
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-checkbox-wrapper {
+    margin-bottom: 24px;
 }
 
 .checkbox-label {
@@ -161,8 +167,15 @@
     border-radius: 2px;
     cursor: pointer;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-checkbox {
+    fill: #ffffff;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked + .checkbox-label > .custom-checkbox {
@@ -172,10 +185,6 @@
 
 .modal-checkbox:checked + .checkbox-label .icon-checkbox {
     opacity: 1;
-}
-
-.modal-checkbox-wrapper {
-    margin-bottom: 24px;
 }
 
 .modal-link {
@@ -205,4 +214,11 @@
 .modal-button:hover,
 .modal-button:focus {
     background-color: #404BBF;
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        max-width: 408px;
+        padding: 72px 24px 24px 24px;
+    }
 }
